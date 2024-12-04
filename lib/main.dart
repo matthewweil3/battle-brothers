@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'widgets/NavigationBarDrawer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,10 +30,13 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: NavigationBarDrawerWidget(),
       appBar: AppBar(
+        foregroundColor: Colors.white,
         backgroundColor: Colors.black,
         title: Text(
           widget.title,
@@ -41,13 +45,13 @@ class _MyHomePageState extends State<MyHomePage> {
               )
           ),
       ),
-      body: const Center(
+      body:const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-             Text(
-              'Welcome to the show',
-            ),
+            Text(
+              "test"
+            )
           ],
         ),
       ),
