@@ -1,5 +1,8 @@
+import 'dart:async';
+import 'widgets/MainScreen.dart';
 import 'package:flutter/material.dart';
 import 'widgets/NavigationBarDrawer.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -11,51 +14,86 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Battle Brothers',
-      color: Colors.black,
-      home: MyHomePage(title: 'Battle Brothers'),
+    return  MaterialApp(
+      home: SplashScreen(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
-
+class SplashScreen extends StatefulWidget {
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  _SplashScreenState createState() => _SplashScreenState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _SplashScreenState extends State<SplashScreen> {
+  double _opacity = 1.0; // Initial opacity
+
+  @override
+  void initState() {
+    super.initState();
+
+    // Start the fade-out animation after a delay
+    Timer(Duration(seconds: 3), () {
+      setState(() {
+        _opacity = 0.0; // Trigger the fade-out
+      });
+
+      // Navigate to the next screen after the fade-out animation
+      Timer(Duration(seconds: 1), () {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => MyHomePage()),
+        );
+      });
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return 
+      AnimatedOpacity(
+        opacity: _opacity, 
+        duration: Duration(seconds: 1), 
+        child: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/MainPhoto.PNG'),
+              fit: BoxFit.contain, 
+            ),
+          ),
+        ),
+      );
+  }
+}
 
 
+class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: NavigationBarDrawerWidget(),
       appBar: AppBar(
-        foregroundColor: Colors.white,
-        backgroundColor: Colors.black,
-        title: Text(
-          widget.title,
+        foregroundColor: Colors.black,
+        backgroundColor:  const Color.fromARGB(255, 209, 209, 209),
+        title: Row
+        (
+          children: [
+
+          Text(          "Battle Brothers",
           style: const TextStyle(
-              color: Colors.white
+              color: Colors.black
               )
           ),
+          SizedBox(width: 130),
+          Image.asset('assets/BBLogo.png', height: 45)
+          ]
+      )
       ),
-      body:const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              "test"
-            )
-          ],
-        ),
-      ),
-      
+      body: Container(
+        padding: EdgeInsets.all(20),
+        color: Colors.white,
+        child: MainScreenWidget()
+      )
     );
   }
 }
