@@ -1,7 +1,7 @@
 import 'dart:async';
-import 'widgets/MainScreen.dart';
+import 'package:battle_brothers/widgets/MainScreen.dart';
 import 'package:flutter/material.dart';
-import 'widgets/NavigationBarDrawer.dart';
+import 'widgets/_layout.dart';
 
 
 void main() {
@@ -21,6 +21,8 @@ class MyApp extends StatelessWidget {
 }
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
@@ -68,32 +70,12 @@ class _SplashScreenState extends State<SplashScreen> {
 
 
 class MyHomePage extends StatelessWidget {
+  const MyHomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      drawer: NavigationBarDrawerWidget(),
-      appBar: AppBar(
-        foregroundColor: Colors.black,
-        backgroundColor:  const Color.fromARGB(255, 209, 209, 209),
-        title: Row
-        (
-          children: [
-
-          Text(          "Battle Brothers",
-          style: const TextStyle(
-              color: Colors.black
-              )
-          ),
-          SizedBox(width: 130),
-          Image.asset('assets/BBLogo.png', height: 45)
-          ]
-      )
-      ),
-      body: Container(
-        padding: EdgeInsets.all(20),
-        color: Colors.white,
-        child: MainScreenWidget()
-      )
+    return CustomLayout(
+      body: MainScreenWidget()
     );
   }
 }

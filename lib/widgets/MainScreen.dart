@@ -65,8 +65,114 @@ class MainScreenWidget extends StatelessWidget {
         )
         ),
 
+      const Text(" "),
+
+      RichText(
+        textAlign: TextAlign.left,
+        text: const TextSpan(
+        children: [
+            TextSpan(text: "The Battle in Action:", style: TextStyle(fontWeight: FontWeight.bold,  decoration: TextDecoration.underline, color:Colors.black)),
+            TextSpan(text: " That our actions be in conformity to Christ. Saint Paul tells us in Galatians 5:16-17 “I say, then: live by the Spirit and you will certainly not gratify the desire of the flesh. For the flesh has desires against the Spirit, and the Spirit against the flesh; these are opposed to each other, so that you may not do what you want.” A fruit of the spirit is self-control and we are strengthened with the Holy Spirit in Confirmation to be a witness of Christ in the world. So then we must have self-control and grow in the virtues of charity, purity, modesty, ATTLE ROTHERS Father Michael Hennigen Diocese of Covington, 2024 chastity, temperance, prudence, and courage. As Battle Brothers we are to help each other fight the good fight as accountability partners to not look at porn, to not underage drink or do drugs, to not treat people as sexual objects. We are called to “be Holy as God is Holy,” to Battle it, Brother! Also Psalm 144:1 tells us, “Blessed be the LORD, my rock, who trains my hands for battle, my fingers for war.” That our bodies are temples of the Holy Spirit ", style: TextStyle(color: Colors.black)),
+            TextSpan(text: "(1 Corinthians 6:19), ", style: TextStyle(fontStyle: FontStyle.italic, color: Colors.black)),
+            TextSpan(text: "  that we are to take care of our temples, to build up our mind, body, and spirit, to be strengthened mentally, physically, and spiritually so that we can do battle.", style: TextStyle(color: Colors.black)),
+        ]
+        )
+        ),
+
+        const Text(" "),
+
+         RichText (
+          textAlign: TextAlign.left,
+          text: TextSpan(text: "Battle Brothers can be an accountability partner or partners, a group of friends, sports team, whole school, prayer group, or youth group. Really all of us Christians are Battle Brothers and Sisters, who are to hold each other accountable. We need others in order to fight the good fight, good friends, who lead us in the right direction, to higher standards, to live virtuous, to become the best version of ourselves. It is why Jesus sent out his disciples by two. We cannot do it on our own, we are in the battle together, as Battle Brothers as we call each other to Battle it, Brother! ", style: TextStyle(color: Colors.black)),
+         ),
+
+
+      const Text(" "),
+
+      RichText(
+        textAlign: TextAlign.left,
+        text: const TextSpan(
+        children: [
+            TextSpan(text: "Think of this:", style: TextStyle(fontWeight: FontWeight.bold,  decoration: TextDecoration.underline, color:Colors.black)),
+            TextSpan(text: " If everyone on a team as Battle Brothers helped each other grow in self-control of one’s tongue to not say the Lord’s name in vain, to not curse, and not to use profanity or vulgarities, it does not mean that all of a sudden God will change the outcome of the game because we are “doing something good for Him,” but by doing this IT changes US to God’s Will, that we are striving to do good, and when one thinks of good things and does good, and God is the ultimate Good, this strengthens a person in mind, body, and spirit, which will change and strengthen the team and contribute to the outcome the team wants.", style: TextStyle(color: Colors.black)),
+        ]
+        )
+        ),
+
+        const Text(" "),
+
+      RichText(
+        textAlign: TextAlign.left,
+        text: const TextSpan(
+        children: [
+            TextSpan(text: "We are called to strive for holiness.", style: TextStyle(fontWeight: FontWeight.bold,  decoration: TextDecoration.underline, color:Colors.black)),
+            TextSpan(text: " This is why we are called “the Church Militant,” the Church here on earth, striving to get to Heaven and take as many people as we can with us. As Battle Brothers, in it together, we ask the intercession of Saint Michael the Archangel to defend us in Battle, the intercession of Saint Joseph protector of the Holy Family, our guardian angel, all the angels and saints, and for the intercession of our Mother Mary who is the model for us to be followers, disciples, of Jesus, to say “Yes” to Him as she did. This is true freedom: not to do whatever we want to do. To sin is not to be free, but true Freedom is to live for God, to do the good, to live as we ought to live. We are made to praise the Lord and give Him thanks by our thoughts, words, and actions. ", style: TextStyle(color: Colors.black)),
+        ]
+        )
+        ),
+
+        const Text(" "),
+
+      RichText(
+        textAlign: TextAlign.left,
+        text: const TextSpan(
+        children: [
+            TextSpan(text: " As Battle Brothers we fight the good fight with the help of God’s Grace, with humility, with trust in the Lord, and faith working through love ", style: TextStyle(color: Colors.black)),
+            TextSpan(text: "(Galatians 5:6), ", style: TextStyle(fontStyle: FontStyle.italic, color: Colors.black)),
+            TextSpan(text: "and though a life of the Sacraments (especially the Eucharist and Confession), through a life of prayer (Adoration, Silent Prayer, meditation on the Scriptures, the Rosary, the Liturgy of the Hours, nightly examination), through Studying the Faith, and through doing good to others and walking with each other on The Way of Jesus as Battle Brothers. Saint John Bosco, the patron saint of youth, gives us the formula for holiness: to pray, study, and to do good to others. That is a life of service to others, to sacrifice, to live for God and others. To be transformed and transfigured into Christ, this is the Will of God for our lives, this is our ultimate call, our vocation, a life of holiness. That we have the desire to do His Will. Then to discern His Call for our life and to know the state of life He calls us too, either the married life, the generous single life, the religious life, or the priestly life, “is be a good person, be a good Christian, and the rest will follow,” says Bishop Iffert, Bishop of Covington (2024).", style: TextStyle(color: Colors.black)),
+        ]
+        )
+        ),
+
+         const Text(" "),
+
+      RichText(
+        textAlign: TextAlign.left,
+        text: const TextSpan(
+        children: [
+            TextSpan(text: "When we stumble and fall the Lord picks us up.", style: TextStyle(fontWeight: FontWeight.bold,  decoration: TextDecoration.underline, color:Colors.black)),
+            TextSpan(text: " The Lord did not come to beat us up, but to raise us up, He came to save us, so let us know His love and mercy. He loves us where we are, but His love does not keep us there, and the more we love Him, the more we change. We are made to give and receive love, so we are to practice love, which is through virtues. Virtues are good habits that we are to practice and then they become second nature. So to not give up and to not give in and to draw our strength from the Lord as we can do all things in Christ who strengthens us", style: TextStyle(color: Colors.black)),
+            TextSpan(text: " (Philippians 4:13). ", style: TextStyle(fontStyle: FontStyle.italic, color: Colors.black)),
+            TextSpan(text: "That God never allows us to be tempted beyond the strength that He gives to us", style: TextStyle(color: Colors.black)),
+            TextSpan(text: " (1 Corinthians 10:13, James 1:13). ", style: TextStyle(fontStyle: FontStyle.italic, color: Colors.black)),
+            TextSpan(text: " So to not despair, but to live with hope in the Lord. We can become “Battle Fatigued,” and it is why we need all the help and assistance we can get from the Lord, our Mother Mary, all the angels and saints, and from each other. God is our Father, Jesus is our Brother, and Mary is our Mother. We are brothers and sisters of the blood bought family by the blood of Jesus. As sons and daughters of God we are called to build up and encourage one another to Battle it, Brother! We are our brother’s keeper. Do not be afraid! Jesus has already won the victory through His cross and resurrection, He has defeated sin and death, but the battle still rages for our souls and as Saint Paul says in 1 Corinthians 15:57, “But thanks be to God who gives us the victory through our Lord Jesus Christ.” Jesus came to make all things new, to make us new, “as we are new creation in Christ where the old is gone and the new has come”", style: TextStyle(color: Colors.black)),
+            TextSpan(text: " (2 Corinthians 5:17).", style: TextStyle(fontStyle: FontStyle.italic, color: Colors.black)),
+        ]
+        )
+        ),
+
+        const Text(" "),
+
+         RichText (
+          textAlign: TextAlign.left,
+          text: TextSpan(text: "* Battle Brothers is also Battle Sisters, as we are brothers and sisters in the Lord and are called to battle, so Battle it, Sister! ", style: TextStyle(fontStyle: FontStyle.italic, color: Colors.black)),
+         ),
+
+          const Text(" "),
+
+          RichText (
+          textAlign: TextAlign.left,
+          text: TextSpan(text: "* Battle Brothers is not a movement or a program, but it is what all Christians are called too, to hold each other accountable and walk with each other in Christ.", style: TextStyle(fontStyle: FontStyle.italic, color: Colors.black)),
+         ),
+
+        const Text(" "),
+
+        Row(children: [
+          Expanded(child: 
+               Column(children: [
+                    RichText(text:TextSpan(text:"Father Michael Hennigen", style: TextStyle(color: Colors.black)), textAlign: TextAlign.left,),
+                    RichText(text:TextSpan(text: "Diocese of Covington, 2024", style: TextStyle(color: Colors.black)),textAlign: TextAlign.left,)
+               ],)         
+          ,),
+          Expanded(child:
+               Image.asset('assets/BBLogo.png', height: 90)
+          ,)
+        ],),
+
+        const Text(" "),
 
     ])
+
     );
   }
 }
