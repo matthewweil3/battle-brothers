@@ -9,6 +9,13 @@ class MainScreenWidget extends StatelessWidget {
     return  SingleChildScrollView(  
     child: Column(
         children: [
+        RichText(
+        textAlign: TextAlign.center,
+        text: const TextSpan(text: "The Battle Brothers Mission", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18 , color: Colors.black),
+        )
+        ),
+       
+      SizedBox(height: 10),
       RichText(
         textAlign: TextAlign.left,
         text: const TextSpan(text: "“Finally, draw your strength from the Lord and from his mighty power. Put on the armor of God so that you may be able to stand firm against the tactics of the devil. For our struggle is not with flesh and blood but with the principalities, with the powers, with the world rulers of this present darkness, with the evil spirits in the heavens. Therefore, put on the armor of God, that you may be able to resist on the evil day and, having done everything, to hold your ground”", style: TextStyle(color: Colors.black),

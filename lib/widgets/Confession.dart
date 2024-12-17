@@ -12,11 +12,11 @@ class ConfessionWidget extends StatelessWidget {
         child: Column(children: [
              RichText(
         textAlign: TextAlign.center,
-        text: const TextSpan(text: "How To Go To Confession", style: TextStyle(color: Colors.black),
+        text: const TextSpan(text: "How To Go To Confession", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18 , color: Colors.black),
         )
         ),
        
-      const Text(" "),
+      SizedBox(height: 10),
 
 
        RichText(
