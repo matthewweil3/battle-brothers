@@ -28,19 +28,17 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  double _opacity = 1.0; // Initial opacity
+  double _opacity = 1.0;
 
   @override
   void initState() {
     super.initState();
 
-    // Start the fade-out animation after a delay
     Timer(Duration(seconds: 3), () {
       setState(() {
-        _opacity = 0.0; // Trigger the fade-out
+        _opacity = 0.0;
       });
 
-      // Navigate to the next screen after the fade-out animation
       Timer(Duration(seconds: 1), () {
         Navigator.pushReplacement(
           context,

@@ -12,6 +12,7 @@ class CustomLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         foregroundColor: Colors.black,
@@ -19,13 +20,12 @@ class CustomLayout extends StatelessWidget {
         title: Row
         (
           children: [
-
           Text("Battle Brothers",
           style: const TextStyle(
               color: Colors.black
               )
           ),
-          SizedBox(width: 130),
+          SizedBox(width: screenWidth * 0.3),
           Image.asset('assets/BBLogo.png', height: 45)
           ]
       )

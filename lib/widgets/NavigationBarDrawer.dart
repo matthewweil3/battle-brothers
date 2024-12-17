@@ -1,16 +1,29 @@
 
 import 'package:battle_brothers/main.dart';
 import 'package:flutter/material.dart';
-import 'Bible.dart';
-import 'Catechism.dart';
 import 'Confession.dart';
 import 'Examination.dart';
 import 'Prayers.dart';
 import 'Rosary.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class NavigationBarDrawerWidget extends StatelessWidget {
   const NavigationBarDrawerWidget({super.key});
 
+
+ void _launchCatechism() async {
+    final Uri url = Uri.parse('https://usccb.cld.bz/Catechism-of-the-Catholic-Church');
+    if (!await launchUrl(url)) {
+      throw 'Could not launch $url';
+    }
+  }
+
+  void _launchBible() async {
+    final Uri url = Uri.parse('https://www.usccb.org/offices/new-american-bible/books-bible');
+    if (!await launchUrl(url)) {
+      throw 'Could not launch $url';
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -63,13 +76,13 @@ class NavigationBarDrawerWidget extends StatelessWidget {
           ListTile(
             title: Text("The Catechism"),
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => CatechismWidget()));
+              _launchCatechism();
             }
           ),
           ListTile(
             title: Text("The Bible"),
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => BibleWidget()));
+              _launchBible();
             }
           )
 
