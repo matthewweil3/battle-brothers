@@ -1,9 +1,18 @@
+import 'package:flutter/gestures.dart';
+
 import '_layout.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class RosaryWidget extends StatelessWidget {
   const RosaryWidget({super.key});
 
+ void _launchPage() async {
+    final Uri url = Uri.parse('https://www.usccb.org/prayers/prayer-st-joseph-after-rosary');
+    if (!await launchUrl(url)) {
+      throw 'Could not launch $url';
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -48,13 +57,31 @@ class RosaryWidget extends StatelessWidget {
 \t\tV. Pray for us, O holy Mother of God.
 \t\tR. That we may be made worthy of the promises of Christ.\n
 \t\tLet us pray: O God, whose Only Begotten Son, by his life, Death, and Resurrection, has purchased for us the rewards of eternal life, grant, we beseech thee, that while meditating on these mysteries of the most holy Rosary of the Blessed Virgin Mary, we may imitate what they contain and obtain what they promise, through the same Christ our Lord. Amen.
-\n(A prayer to St. Joseph may also follow.) Conclude the Rosary with the Sign of the Cross.''',//ADD LINK HERE
+''',//ADD LINK HERE
                 style: TextStyle(
                   fontStyle: FontStyle.italic,
                   color: Colors.black,
                 ),
               ),
-            ),
+            ), 
+            Align(
+              alignment: Alignment.center,
+              child: 
+            RichText(
+              textAlign: TextAlign.center, 
+              text: TextSpan(
+              text: "(A ",
+                style: TextStyle(
+                  
+                  color: Colors.black,
+                
+                ),
+                children: <TextSpan>[
+                  TextSpan(text: "prayer to St. Joseph ",  style: TextStyle(color: Colors.blue, decoration: TextDecoration.underline), recognizer: TapGestureRecognizer()..onTap = _launchPage,),
+                  TextSpan(text: "may also follow.)\n Conclude the Rosary with the Sign of the Cross."),
+                ]
+              ),
+            )),
             const SizedBox(height: 20),
             const Text(
               "The Joyful Mysteries",

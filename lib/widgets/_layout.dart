@@ -15,14 +15,14 @@ class CustomLayout extends StatelessWidget {
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        foregroundColor: Colors.black,
-        backgroundColor:  const Color.fromARGB(255, 209, 209, 209),
+        foregroundColor: Colors.white,
+        backgroundColor:  Color.fromARGB(255, 2, 79, 141),
         title: Row
         (
           children: [
           Text("Battle Brothers",
           style: const TextStyle(
-              color: Colors.black
+              color: Colors.white
               )
           ),
           SizedBox(width: screenWidth * 0.3),

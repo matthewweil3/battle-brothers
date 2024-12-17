@@ -11,7 +11,7 @@ class MainScreenWidget extends StatelessWidget {
         children: [
         RichText(
         textAlign: TextAlign.center,
-        text: const TextSpan(text: "The Battle Brothers Mission", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18 , color: Colors.black),
+        text: const TextSpan(text: "Our Mission", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18 , color: Colors.black),
         )
         ),
        
